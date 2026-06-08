@@ -1,0 +1,19 @@
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=
+spring.jpa.hibernate.ddl-auto=
+spring.jpa.properties.hibernate.dialect=
+spring.jpa.show-sql=
+server.port=
+
+
+# === GROQ AI (gratis en España, sin tarjeta) ===
+# Obtén tu key en: https://console.groq.com/keys
+groq.api.key=
+groq.url=
+groq.model=
+
+
+jwt.secret=
+jwt.expiration=
