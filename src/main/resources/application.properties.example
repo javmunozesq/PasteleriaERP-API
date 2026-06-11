@@ -1,19 +1,18 @@
-spring.datasource.url=
-spring.datasource.username=
+spring.datasource.url=jdbc:mysql://localhost:3306/obradorSanRafael?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Europe/Madrid&allowPublicKeyRetrieval=true
+spring.datasource.username=root
 spring.datasource.password=
-spring.datasource.driver-class-name=
-spring.jpa.hibernate.ddl-auto=
-spring.jpa.properties.hibernate.dialect=
-spring.jpa.show-sql=
-server.port=
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.show-sql=false
+server.port=8080
 
 
 # === GROQ AI (gratis en España, sin tarjeta) ===
 # Obtén tu key en: https://console.groq.com/keys
-groq.api.key=
-groq.url=
-groq.model=
+groq.api.key=TU_GROQ_API_KEY_AQUI
+groq.url=https://api.groq.com/openai/v1/chat/completions
+groq.model=llama-3.3-70b-versatile
 
-
-jwt.secret=
-jwt.expiration=
+jwt.secret=CAMBIA_ESTO_POR_UNA_CADENA_LARGA_Y_ALEATORIA
+jwt.expiration=86400000
